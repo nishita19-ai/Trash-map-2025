@@ -1,0 +1,110 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow: hidden;;
+}
+
+/* Full-screen centering */
+.login-page {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* takes full viewport height */
+  padding: 20px; /* keeps it clean on smaller screens */
+}
+
+/* Background Animation */
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  background: linear-gradient(135deg, #20c997, #198754);
+}
+
+.background-animation i {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 2.5rem;
+  animation: floatIcons 20s linear infinite;
+}
+
+.background-animation i:nth-child(1) { left: 10%; animation-duration: 18s; }
+.background-animation i:nth-child(2) { left: 30%; animation-duration: 22s; }
+.background-animation i:nth-child(3) { left: 50%; animation-duration: 19s; }
+.background-animation i:nth-child(4) { left: 70%; animation-duration: 21s; }
+.background-animation i:nth-child(5) { left: 85%; animation-duration: 24s; }
+.background-animation i:nth-child(6) { left: 95%; animation-duration: 20s; }
+
+@keyframes floatIcons {
+  0% { transform: translateY(100vh) rotate(0deg); }
+  100% { transform: translateY(-10vh) rotate(360deg); }
+}
+
+/* Login Section */
+.login-page {
+  position: relative;
+  z-index: 1;
+}
+
+.login-card {
+  background: #ffffff;
+  border-radius: 18px;
+  max-width: 420px;
+  width: 100%;
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+.login-card h2 {
+  color: #198754;
+}
+
+.brand {
+  color: #20c997;
+  font-weight: 700;
+}
+
+/* Buttons */
+.btn-ct {
+  background: linear-gradient(135deg, #20c997, #198754);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-ct:hover {
+  background: linear-gradient(135deg, #198754, #20c997);
+  transform: translateY(-2px);
+}
+
+/* Input Groups */
+.input-group-text {
+  background: #f8f9fa;
+  border: 1px solid #ced4da;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-left: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

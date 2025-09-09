@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrashMap — Smart City Garbage Management System</title>
+  <meta name="description" content="A real-time, AI-assisted waste monitoring system for a cleaner urban future." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Bootstrap (Dark Theme with Bootswatch Darkly) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/darkly/bootstrap.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="ct-preloader" class="d-flex justify-content-center align-items-center">
+    <div class="logo-mark">
+      <video autoplay muted loop playsinline class="logo-video">
+        <source src="./assets/CleanTrackLogoAnimation.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm bg-dark navbar-dark animate__animated animate__fadeInDown">
+    <div class="container-xl">
+      <a class="navbar-brand fw-bold d-flex align-items-center gap-1" href="#">
+        TrashMap<span class="dot text-success">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#techstack">Tech Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="#objectives">Objectives</a></li>
+          <li class="nav-item"><a class="nav-link" href="#future">Future</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center min-vh-100 text-center">
+    <div class="container-xl">
+      <h1 class="headline mb-3 animate__animated animate__fadeInUp">TrashMap</h1>
+      <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">
+        A real-time, AI-assisted waste monitoring system for a cleaner urban future.
+      </p>
+      <a href="#overview" class="btn btn-ct btn-lg shadow-sm animate__animated animate__zoomIn animate__delay-2s">Discover More</a>
+    </div>
+  </section>
+
+  <!-- Login Explore Section -->
+  <section class="login-section text-center py-5">
+    <div class="container">
+      <h2 class="mb-2">Try our product today</h2>
+      <h4 class="login-tagline mb-4">Actions prove more than words.</h4>
+      <button type="button" class="btn btn-ct btn-lg shadow-sm" id="loginBtn">
+        Try Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section id="overview" class="section section-cleanliness">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <span class="section-label text-uppercase text-secondary fw-bold small">Project</span>
+        <h2 class="h2 fw-bold">Overview</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="lead text-center">TrashMap modernizes waste collection in urban areas by integrating real-time monitoring, smart route planning, citizen engagement, and data analytics — all without relying on expensive IoT hardware.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement -->
+  <section class="section section-garbage">
+    <div class="container-xl">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-left">
+          <h2 class="h2 fw-bold">Problem Statement</h2>
+          <p class="lead">Traditional garbage collection is inefficient and reactive:</p>
+          <ul class="list-unstyled ps-2">
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-x-circle me-2 text-danger"></i>No real-time visibility of bin status</li>
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-x-circle me-2 text-danger"></i>Bins overflow due to delayed pickups</li>
+            <li class="mb-2 d-flex align-items-center"><i class="bi bi-x-circle me-2 text-danger"></i>No optimized route planning</li>
+            <li class="d-flex align-items-center"><i class="bi bi-x-circle me-2 text-danger"></i>Citizens lack communication channels</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 reveal-right">
+          <div class="green-card p-4 shadow-sm rounded-4 bg-white border border-2 border-success-subtle">
+            <h5 class="fw-bold mb-2">Solution</h5>
+            <p class="mb-0">TrashMap provides simulated smart bins, real-time dashboards, citizen complaint portal, AI-powered route optimization, and live maps — creating cleaner streets and efficient waste management.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Objectives -->
+  <section id="objectives" class="section section-smartcity">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="h2 fw-bold">Objectives</h2>
+      </div>
+      <div class="row g-4 text-center justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="card p-4 h-100 d-flex align-items-center justify-content-center shadow-sm">
+            <h6 class="mb-0">Smart Bin Simulation</h6>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="card p-4 h-100 d-flex align-items-center justify-content-center shadow-sm">
+            <h6 class="mb-0">Citizen Complaint Portal</h6>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="card p-4 h-100 d-flex align-items-center justify-content-center shadow-sm">
+            <h6 class="mb-0">AI Route Planning</h6>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="card p-4 h-100 d-flex align-items-center justify-content-center shadow-sm">
+            <h6 class="mb-0">Interactive Data Maps</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Features -->
+  <section id="features" class="section section-dark">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Core Features</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card feature-card h-100 text-start">
+            <h5><i class="bi bi-trash3 me-2"></i> Smart Bin Simulation</h5>
+            <p>Automated fill-level logic with color-coded bins: Green, Orange, Red.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card feature-card h-100 text-start">
+            <h5><i class="bi bi-speedometer2 me-2"></i> Admin Dashboard</h5>
+            <p>Track bins, complaints, and visualize analytics in one place.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card feature-card h-100 text-start">
+            <h5><i class="bi bi-people me-2"></i> Citizen Portal</h5>
+            <p>File complaints, upload photos, and track resolution status.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card feature-card h-100 text-start">
+            <h5><i class="bi bi-truck me-2"></i> Route Optimization</h5>
+            <p>AI suggests shortest garbage truck routes to save fuel and time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="techstack" class="section section-greenery">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="h2 fw-bold">Technology Stack</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="kpi-card p-4 text-center shadow-sm h-100">
+            <h6 class="fw-bold">Frontend</h6>
+            <p class="mb-0">React.js, HTML, CSS, JS</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="kpi-card p-4 text-center shadow-sm h-100">
+            <h6 class="fw-bold">Backend</h6>
+            <p class="mb-0">Firebase / Node.js + Express</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="kpi-card p-4 text-center shadow-sm h-100">
+            <h6 class="fw-bold">Database</h6>
+            <p class="mb-0">Firebase Firestore / MongoDB</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 reveal">
+          <div class="kpi-card p-4 text-center shadow-sm h-100">
+            <h6 class="fw-bold">Maps</h6>
+            <p class="mb-0">Google Maps API / Leaflet.js</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Scope -->
+  <section id="future" class="section section-garbage">
+    <div class="container-xl">
+      <div class="text-center mb-5">
+        <h2 class="h2 fw-bold">Future Scope</h2>
+      </div>
+      <div class="timeline mx-auto" style="max-width:700px;">
+        <div class="timeline-item"><h6 class="fw-bold mb-1">IoT Sensors</h6><p class="mb-0">Integration with ultrasonic + GPS devices</p></div>
+        <div class="timeline-item"><h6 class="fw-bold mb-1">Waste Classification</h6><p class="mb-0">Segregation into wet, dry, plastic, etc.</p></div>
+        <div class="timeline-item"><h6 class="fw-bold mb-1">Blockchain</h6><p class="mb-0">Tamper-proof logging of pickups</p></div>
+        <div class="timeline-item"><h6 class="fw-bold mb-1">Rewards</h6><p class="mb-0">Incentives for citizen recycling participation</p></div>
+        <div class="timeline-item"><h6 class="fw-bold mb-1">Drones</h6><p class="mb-0">Surveillance for high-density urban areas</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section text-center">
+    <div class="container-xl">
+      <h2 class="fw-bold mb-4">Team</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card team-card shadow-sm p-4">
+            <h4 class="mb-2">Developed by</h4>
+            <h3 class="fw-bold">Nishita Gupta</h3>
+            <p class="text-muted">Full Stack Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container-xl">
+      <p class="mb-1">&copy; 2025 TrashMap. All rights reserved.</p>
+      <small>Smart City Garbage Management System</small>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

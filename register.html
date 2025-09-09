@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register | TrashMap</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+</head>
+<body>
+  <!-- Background Animation -->
+  <div class="background-animation">
+    <i class="bi bi-person-circle"></i>
+    <i class="bi bi-shield-lock"></i>
+    <i class="bi bi-envelope"></i>
+    <i class="bi bi-person-badge"></i>
+    <i class="bi bi-people"></i>
+    <i class="bi bi-trash"></i>
+  </div>
+
+  <!-- Register Section -->
+  <section class="login-page d-flex align-items-center justify-content-center min-vh-100">
+    <div class="login-card p-4 shadow-lg w-100">
+      <div class="text-center mb-3">
+        <h2 class="fw-bold">Create Account</h2>
+        <p class="text-muted">Join <span class="brand">TrashMap</span> today</p>
+      </div>
+      <form id="registerForm" class="mt-3">
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="bi bi-person"></i></span>
+          <input type="text" id="name" class="form-control" placeholder="Full Name" required />
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+          <input type="text" id="username" class="form-control" placeholder="Username" required />
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+          <input type="email" id="email" class="form-control" placeholder="Email" required />
+        </div>
+        <div class="mb-3 input-group">
+          <span class="input-group-text"><i class="bi bi-lock"></i></span>
+          <input type="password" id="password" class="form-control" placeholder="Password" required />
+        </div>
+
+        <!-- User Type Radios -->
+        <div class="mb-3 text-start">
+          <label class="form-label fw-semibold">Select User Type:</label>
+          <div>
+            <input type="radio" id="citizenRadio" name="userType" value="citizen" required />
+            <label for="citizenRadio">Citizen</label>
+          </div>
+          <div>
+            <input type="radio" id="adminRadio" name="userType" value="admin" />
+            <label for="adminRadio">Admin</label>
+          </div>
+        </div>
+
+        <!-- Admin verification message -->
+        <div id="verifyMsg" class="form-message" style="display:none;"></div>
+
+        <button type="submit" class="btn btn-ct w-100 mt-2">Create Account</button>
+      </form>
+      <div class="text-center mt-3">
+        <p class="mb-0">Already have an account? <a href="login.html" class="text-success fw-semibold">Login</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+   <script type="module" src="firebaseconfig.js"></script>
+  <script type="module" src="register.js"></script>
+</body>
+</html>
